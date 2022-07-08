@@ -16,7 +16,7 @@
     height: calc(64px *8);
     display: flex;
     flex-wrap: wrap;
-    border: 10px solid #6c4117;
+    border: 10px solid #601d23;
 }
 
 .cell {
@@ -34,11 +34,11 @@
 }
 
 .black {
-    background-color: #657dac;
+    background-color: #bc6233;
 }
 
 .white {
-    background-color: #ffe8d3;
+    background-color: #f0d5b8;
 }
 
 .selected {
@@ -50,4 +50,13 @@
     width: 12px;
     border-radius: 50%;
     background-color: #22c022;
+}
+
+.lost {
+    height: calc(50vh - 60px);
+    padding: 30px;
+    margin-left: 50px;
+    background-color: lightgray;
+    font-family: monospace;
+    letter-spacing: 1px;
 }

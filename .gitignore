@@ -1,13 +1,13 @@
 # See http://help.github.com/ignore-files/ for more about ignoring files.
 
 # Compiled output
-angular-blog/dist
-angular-blog/tmp
-angular-blog/out-tsc
-angular-blog/bazel-out
+chess-base/dist
+chess-base/tmp
+chess-base/out-tsc
+chess-base/bazel-out
 
 # Node
-angular-blog/node_modules
+chess-base/node_modules
 npm-debug.log
 yarn-error.log
 
@@ -29,13 +29,12 @@ yarn-error.log
 .history/*
 
 # Miscellaneous
-angular-blog/.angular/cache
 .sass-cache/
-angular-blog/connect.lock
-angular-blog/coverage
-angular-blog/libpeerconnection.log
+chess-base/connect.lock
+chess-base/coverage
+chess-base/libpeerconnection.log
 testem.log
-angular-blog/typings
+chess-base/typings
 
 # System files
 .DS_Store
