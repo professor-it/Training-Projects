@@ -12,22 +12,7 @@
   <component name="ChangeListManager">
     <list default="true" id="1f38859d-3291-49b4-95d4-b162e0c4423f" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/r3f-chairs/public/favicon.ico" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/r3f-chairs/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/r3f-chairs/public/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/r3f-chairs/public/logo192.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/r3f-chairs/public/logo512.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/r3f-chairs/public/manifest.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/r3f-chairs/public/robots.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/r3f-chairs/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/r3f-chairs/src/App.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/r3f-chairs/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/r3f-chairs/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/r3f-chairs/src/App.test.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/r3f-chairs/src/index.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/r3f-chairs/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/r3f-chairs/src/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/r3f-chairs/src/logo.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/r3f-chairs/src/reportWebVitals.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/r3f-chairs/src/setupTests.js" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -73,7 +58,7 @@
       <workItem from="1657199506127" duration="10142000" />
       <workItem from="1657211127440" duration="1126000" />
       <workItem from="1657282871909" duration="7602000" />
-      <workItem from="1657456858855" duration="3547000" />
+      <workItem from="1657456858855" duration="3919000" />
     </task>
     <servers />
   </component>
