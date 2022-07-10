@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="1f38859d-3291-49b4-95d4-b162e0c4423f" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="2BTk1VlaZMo1UWWoQZcsIGPP7qG" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="settings.editor.selected.configurable" value="settings.javascript.linters.tslint" />
+    <property name="ts.external.directory.path" value="E:\Programming\Projects\Training\chess-base\node_modules\typescript\lib" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="1f38859d-3291-49b4-95d4-b162e0c4423f" name="Default Changelist" comment="" />
+      <created>1656937248097</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1656937248097</updated>
+      <workItem from="1656937253953" duration="8932000" />
+      <workItem from="1657024030851" duration="10096000" />
+      <workItem from="1657110665702" duration="614000" />
+      <workItem from="1657194485960" duration="3549000" />
+      <workItem from="1657199506127" duration="10142000" />
+      <workItem from="1657211127440" duration="1126000" />
+      <workItem from="1657282871909" duration="7602000" />
+      <workItem from="1657456858855" duration="2933000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="2" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="648" y="186" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1657196136325">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="648" y="186" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1080/-1080.-836.1080.1920@0.0.1920.1080" timestamp="1657196136325" />
+    <state x="1177" y="342" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1657204097869">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="1177" y="342" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1080/-1080.-836.1080.1920@0.0.1920.1080" timestamp="1657204097869" />
+    <state x="1245" y="256" key="#com.intellij.ide.util.MemberChooser" timestamp="1657203827689">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="1245" y="256" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1080/-1080.-836.1080.1920@0.0.1920.1080" timestamp="1657203827689" />
+    <state x="514" y="146" key="SettingsEditor" timestamp="1657194761164">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="514" y="146" key="SettingsEditor/0.0.1920.1080/-1080.-836.1080.1920@0.0.1920.1080" timestamp="1657194761164" />
+    <state x="823" y="276" key="Vcs.Push.Dialog.v2" timestamp="1657031219867">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="823" y="276" key="Vcs.Push.Dialog.v2/0.0.1920.1080/-1080.-836.1080.1920@0.0.1920.1080" timestamp="1657031219867" />
+    <state x="973" y="254" key="run.anything.popup" timestamp="1656956616421">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="973" y="254" key="run.anything.popup/0.0.1920.1080/-1080.-836.1080.1920@0.0.1920.1080" timestamp="1656956616421" />
+    <state x="1094" y="240" width="672" height="678" key="search.everywhere.popup" timestamp="1657200979472">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="1094" y="240" width="672" height="678" key="search.everywhere.popup/0.0.1920.1080/-1080.-836.1080.1920@0.0.1920.1080" timestamp="1657200979472" />
+  </component>
+</project>
