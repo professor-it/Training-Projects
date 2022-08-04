@@ -1,7 +1,7 @@
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, View } from 'react-native';
-import HomeScreen from './src/screens/HomeScreen'
 import CoinDetailedScreen from './src/screens/CoinDetailedScreen'
+import React from "react";
 
 export default function App() {
   return (
