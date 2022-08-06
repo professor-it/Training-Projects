@@ -1,9 +1,10 @@
-import React, {useState, useEffect} from 'react'
+import React, {useState} from 'react'
 import {View, Text, Dimensions, TextInput} from 'react-native'
 import Coin from '../../../assets/data/crypto.json'
 import CoinDetailedHeader from './components/CoinDetailedHeader'
 import styles from './styles'
-import {AntDesign} from '@expo/vector-icons'
+import {AntDesign} from '@expo/vector-icons';
+import {useRoute} from '@react-navigation/native'
 
 const CoinDetailedScreen = () => {
 	const {
@@ -20,6 +21,10 @@ const CoinDetailedScreen = () => {
 
 	const [coinValue, setCoinValue] = useState('1');
 	const [usdValue, setUsdValue] = useState(current_price.usd.toString());
+
+	const route = useRoute();
+
+	const {params: {coinID}} = route;
 
 	const percentageColor = price_change_percentage_24h < 0 ? "#ea3943" : '#16c784'
 	const chartColor = current_price.usd > prices[0][1] ? "#16c784" : "#ea3943";
