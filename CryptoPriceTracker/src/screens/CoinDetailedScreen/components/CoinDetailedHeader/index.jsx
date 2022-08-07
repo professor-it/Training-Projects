@@ -5,7 +5,7 @@ import {Image, Text, View} from 'react-native'
 import {useNavigation} from '@react-navigation/native'
 
 const CoinDetailedHeader = (props) => {
-	const {image, symbol, marketCapRank} = props;
+	const {coinId, image, symbol, marketCapRank} = props;
 	const navigation = useNavigation();
 	return (
 		<View style={styles.headerContainer}>

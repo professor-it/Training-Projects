@@ -1,32 +1,68 @@
-import React, {useState} from 'react'
-import {View, Text, Dimensions, TextInput} from 'react-native'
-import Coin from '../../../assets/data/crypto.json'
-import CoinDetailedHeader from './components/CoinDetailedHeader'
-import styles from './styles'
+import React, {useState, useEffect} from 'react';
+import {View, Text, Dimensions, TextInput, ActivityIndicator} from 'react-native';
+import CoinDetailedHeader from './components/CoinDetailedHeader';
+import styles from './styles';
 import {AntDesign} from '@expo/vector-icons';
-import {useRoute} from '@react-navigation/native'
+import {useRoute} from '@react-navigation/native';
+import {getCoinMarketChart, getDetailedCoinData} from '../../services/requests'
 
 const CoinDetailedScreen = () => {
+	const [coin, setCoin] = useState(null);
+	const [coinMarketData, setCoinMarketData] = useState(null);
+	const route = useRoute();
+	const {params: {coinId}} = route;
+
+	const [loading, setLoading] = useState(false);
+	const [coinValue, setCoinValue] = useState('1');
+	const [usdValue, setUsdValue] = useState('');
+
+	const fetchCoinData = async () => {
+		setLoading(true);
+		const fetchedCoinData = await getDetailedCoinData(coinId);
+		setCoin(fetchedCoinData);
+		setUsdValue(fetchedCoinData.market_data.current_price.usd.toString());
+		setLoading(false);
+	}
+
+	const fetchMarketCoinData = async (selectedRangeValue) => {
+		const fetchedCoinMarketData = await getCoinMarketChart(
+			coinId,
+			selectedRangeValue
+		);
+		setCoinMarketData(fetchedCoinMarketData);
+	};
+
+	useEffect(() => {
+		fetchCoinData();
+		fetchMarketCoinData(1);
+	}, [])
+
+	if (loading || !coin || !coinMarketData) {
+		return (
+			<View style={{
+				flex: 1,
+				justifyContent: 'center'
+			}}>
+				<ActivityIndicator size="large" color="#999999" />
+			</View>
+		)
+	}
+
 	const {
+		id,
 		image: {small},
 		name,
 		symbol,
-		prices,
 		market_data: {
 			market_cap_rank,
 			current_price,
 			price_change_percentage_24h
 		}
-	} = Coin;
+	} = coin;
 
-	const [coinValue, setCoinValue] = useState('1');
-	const [usdValue, setUsdValue] = useState(current_price.usd.toString());
+	const {prices} = coinMarketData;
 
-	const route = useRoute();
-
-	const {params: {coinID}} = route;
-
-	const percentageColor = price_change_percentage_24h < 0 ? "#ea3943" : '#16c784'
+	const percentageColor = price_change_percentage_24h < 0 ? "#ea3943" : "#16c784" || "white";
 	const chartColor = current_price.usd > prices[0][1] ? "#16c784" : "#ea3943";
 	const screenWidth = Dimensions.get('window').width
 
@@ -57,14 +93,14 @@ const CoinDetailedScreen = () => {
 
 	return (
 		<View style={{paddingHorizontal: 10}}>
-			<CoinDetailedHeader image={small} name={name} symbol={symbol} marketCapRank={market_cap_rank}/>
+			<CoinDetailedHeader coinId={id} image={small} symbol={symbol} marketCapRank={market_cap_rank}/>
 			<View style={styles.priceContainer}>
 				<View>
 					<Text style={styles.name}>{name}</Text>
 					<Text style={styles.currentPrice}>${current_price.usd}</Text>
 				</View>
 				<View style={{
-					backgroundColor: {percentageColor},
+					backgroundColor: percentageColor,
 					paddingHorizontal: 3,
 					paddingVertical: 8,
 					borderRadius: 5,

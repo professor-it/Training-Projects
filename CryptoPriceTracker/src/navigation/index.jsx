@@ -9,7 +9,7 @@ const Navigation = () => {
 	return (
 		<Stack.Navigator
 			initialRouteName="Home"
-			screenOption={{headerShown: false}}
+			screenOptions={{headerShown: false}}
 		>
 			<Stack.Screen name={"Home"} component={HomeScreen}/>
 			<Stack.Screen name={"CoinDetailed"} component={CoinDetailedScreen}/>
