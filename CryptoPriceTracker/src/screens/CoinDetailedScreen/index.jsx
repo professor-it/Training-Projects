@@ -93,7 +93,12 @@ const CoinDetailedScreen = () => {
 
 	return (
 		<View style={{paddingHorizontal: 10}}>
-			<CoinDetailedHeader coinId={id} image={small} symbol={symbol} marketCapRank={market_cap_rank}/>
+			<CoinDetailedHeader
+				coinId={id}
+				image={small}
+				symbol={symbol}
+				marketCapRank={market_cap_rank}
+			/>
 			<View style={styles.priceContainer}>
 				<View>
 					<Text style={styles.name}>{name}</Text>
