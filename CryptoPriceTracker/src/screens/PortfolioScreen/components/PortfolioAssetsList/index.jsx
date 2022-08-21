@@ -1,18 +1,19 @@
 import React from 'react'
-import {Text, View, FlatList} from 'react-native'
+import {Text, View, FlatList, Pressable} from 'react-native'
 import {AntDesign} from '@expo/vector-icons'
 import styles from './styles'
+import PortfolioAssetsItem from '../PortfolioAssetsItem'
 
 const PortfolioAssetsList = () => {
 	return (
 		<View>
 			<FlatList
-				data={[]}
-				renderItem={() => <Text>Item</Text>}
+				data={[{id: 'bitcoin'}]}
+				renderItem={({item}) => <PortfolioAssetsItem assetItem={item}/>}
 				ListHeaderComponent={
 					<>
 						<View style={styles.balanceContainer}>
-							<View >
+							<View>
 								<Text style={styles.currentBalance}>Current Balance</Text>
 								<Text style={styles.currentBalanceValue}>$20000</Text>
 								<Text style={styles.valueChange}>$1000 (All Time)</Text>
@@ -26,7 +27,13 @@ const PortfolioAssetsList = () => {
 								<Text style={styles.percentageChange}>1.2%</Text>
 							</View>
 						</View>
+						<Text style={styles.assetsLabel}>Your Assets</Text>
 					</>
+				}
+				ListFooterComponent={
+					<Pressable style={styles.buttonContainer}>
+						<Text style={styles.buttonText}>Add New Assets</Text>
+					</Pressable>
 				}
 			/>
 		</View>
