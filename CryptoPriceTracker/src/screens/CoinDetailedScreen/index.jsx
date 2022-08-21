@@ -20,6 +20,7 @@ const CoinDetailedScreen = () => {
 		setLoading(true);
 		const fetchedCoinData = await getDetailedCoinData(coinId);
 		setCoin(fetchedCoinData);
+		console.log(fetchedCoinData)
 		setUsdValue(fetchedCoinData.market_data.current_price.usd.toString());
 		setLoading(false);
 	}
