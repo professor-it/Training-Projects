@@ -1,26 +1,19 @@
-import React from 'react'
-import {View, Text} from 'react-native'
+import React, {useState} from 'react'
+import {View, Text, TextInput, Pressable} from 'react-native'
 import SearchableDropDown from 'react-native-searchable-dropdown'
+import styles from './styles'
+import {useNavigation} from '@react-navigation/native'
 
 const AddNewAssetScreen = () => {
+	const [boughtAssetQuantity, setBoughtAssetQuantity] = useState('')
+	const navigation = useNavigation()
 	return (
-		<View>
+		<View style={{flex: 1}}>
 			<SearchableDropDown
 				items={[]}
 				onItemSelect={(item) => console.log(item)}
-				containerStyle={{
-					width: '100%',
-					paddingHorizontal: 10,
-					paddingVertical: 20
-				}}
-				itemStyle={{
-					padding: 10,
-					marginTop: 2,
-					backgroundColor: '#1e1e1e',
-					borderWidth: 1,
-					borderColor: '#444444',
-					borderRadius: 5
-				}}
+				containerStyle={styles.dropdownContainer}
+				itemStyle={styles.item}
 				itemTextStyle={{
 					color: 'white'
 				}}
@@ -40,6 +33,25 @@ const AddNewAssetScreen = () => {
 					}
 				}}
 			/>
+			<View style={styles.boughtQuantityContainer}>
+				<View style={{flexDirection: 'row'}}>
+					<TextInput
+						style={{color: 'white', fontSize: 90}}
+						value={boughtAssetQuantity}
+						placeholder='0'
+						keyboardType='numeric'
+						onChange={setBoughtAssetQuantity}
+					/>
+					<Text style={styles.ticker}>BTC</Text>
+				</View>
+				<Text style={styles.pricePerCoin}>$40000 per coin</Text>
+			</View>
+			<Pressable
+				style={styles.buttonContainer}
+				onPress={() => navigation.navigate('AddNewAssetScreen')}
+			>
+				<Text style={styles.buttonText}>Add New Asset</Text>
+			</Pressable>
 		</View>
 	)
 }
