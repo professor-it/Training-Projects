@@ -1,11 +1,26 @@
-import React, {useState} from 'react'
+import React, {useState, useEffect} from 'react'
 import {View, Text, TextInput, Pressable} from 'react-native'
 import SearchableDropDown from 'react-native-searchable-dropdown'
 import styles from './styles'
 import {useNavigation} from '@react-navigation/native'
+import {useRecoilState} from 'recoil'
+import {allPortfolioBoughtAssetsInStorage} from '../../atoms/PortfolioAssets'
 
 const AddNewAssetScreen = () => {
+	const [allCoins, setAllCoins] = useState([])
 	const [boughtAssetQuantity, setBoughtAssetQuantity] = useState('')
+	const [assetsInStorage, setAssetsInStorage] = useRecoilState(allPortfolioBoughtAssetsInStorage)
+	const onAddNewAsset = () => {
+
+	}
+
+	const fetchAllCoins = () => {
+
+	}
+
+	useEffect(() => {
+		fetchAllCoins()
+	}, [])
 	const navigation = useNavigation()
 	return (
 		<View style={{flex: 1}}>
@@ -48,7 +63,7 @@ const AddNewAssetScreen = () => {
 			</View>
 			<Pressable
 				style={styles.buttonContainer}
-				onPress={() => navigation.navigate('AddNewAssetScreen')}
+				onPress={onAddNewAsset}
 			>
 				<Text style={styles.buttonText}>Add New Asset</Text>
 			</Pressable>
